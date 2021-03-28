@@ -19,7 +19,7 @@ Do the following:
 */
 let votingAge = 18;
 if(votingAge >= 18) {
-      console.log("true")
+      console.log(true)
 }
 
 /*
@@ -178,34 +178,42 @@ if(compChoice == 0) {
   computer = 'scissors'
 }
 
-function game(user, comp) {
-  if(user == "paper" && comp == "paper") {
-    console.log("It's a tie")
-  }else if(user == "paper" && comp == "rock") {
-    console.log("User wins")
-  }else if(user == "paper" && comp == "scissors") {
-      console.log("comp wins")
+function game(user, comp = computer) {
+//   let computer = ''; 
+// if(compChoice == 0) {
+//   computer = 'rock'
+// } else if(compChoice == 1) {
+//   computer = 'paper';
+// } else {
+//   computer = 'scissors'
+//}
+  if(user === "paper" && comp === "paper") {
+    console.log("it's a tie")
+  }else if(user === "paper" && comp === "rock") {
+    console.log("you win!")
+  }else if(user === "paper" && comp === "scissors") {
+      console.log("you lose!")
   }
   if(user == "rock" && comp == "rock") {
-    console.log("It's a tie")
+    console.log("it's a tie")
   }else if(user == "rock" && comp == "scissors") {
-    console.log("User wins")
+    console.log("you win!")
   }else if(user == "rock" && comp == "paper") {
-      console.log("comp wins")
+      console.log("you lose!")
   }
   if(user == "scissors" && comp == "scissors") {
-    console.log("It's a tie")
+    console.log("it's a tie")
   }else if(user == "scissors" && comp == "paper") {
-    console.log("User wins")
+    console.log("you win!")
   }else if(user == "scissors" && comp == "rock") {
-      console.log("comp wins")
+      console.log("you lose!")
   }
 }
 
   
-  game("paper", computer);
-  game("rock", computer);
-  game('scissors', computer);
+  // game("paper", computer);
+  // game("rock", computer);
+  // game('scissors', computer);
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -274,15 +282,15 @@ Using the grade function below do the following:
 function grade(/*Your Code here */score){
   /*Your Code here */
   if(score >= 90){
-    return 'You got an A'
+    return 'you got an A'
   } else if(score >= 80) {
-    return 'You got a B'
+    return 'you got a B'
   }else if(score >= 70) {
-    return 'You got a C'
+    return 'you got a C'
   }else if(score >= 60) {
-    return 'You got a D'
+    return 'you got a D'
   } else {
-    return 'You got a F'
+    return 'you got an F'
   }
 
   }
